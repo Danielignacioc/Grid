@@ -1,5 +1,5 @@
-.navbar-container
-{
+
+.navbar-container {
     display: grid;
     grid-template-columns: auto;
     justify-items: center;
@@ -11,76 +11,73 @@
 }
 
 
-.aside-container
-{
+.aside-container {
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: row;
     background-color: rgb(23, 23, 23);
     color: rgb(210, 210, 210);
     min-height: 50vh;
     width: 90%;
+
+
+
+/*     justify-content: center;
+ */
+
+}
+
+.aside-container ul li
+{
+
+    margin-top: 1.5rem;
     
 
-
-    justify-content: center;
-
-    
 }
 
-.aside-container ul
-{
-    margin-top: -260%;
-}   
 
 
 
-
-.productos-container
-{
+.productos-container {
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
-    justify-items: center;
-    align-items: right;
+/*     justify-items: center;
+ */    align-items: right;
 
 
 }
- 
-.item
-{
 
-    align-items: center;    
+/* .item {
+
+    align-items: left;
+} */
+
+img {
+    width: 30%;
 }
 
-img
+
+a 
 {
-    width:30%;
+
+   text-decoration: none;
+   
 }
 
-
-a
-{
-    text-decoration: none;
-}
-
-.medio-container
-{
+/* .medio-container {
     display: grid;
-    grid-template-columns:1fr 8fr;
+    grid-template-columns: 1fr 8fr;
 }
+ */
 
-
-.boton
-{
+.boton {
     background-color: darkgray;
     color: black;
-
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.footer-container
-{
+.footer-container {
     display: grid;
     align-items: center;
     justify-content: center;
@@ -88,3 +85,4 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: black;
     color: whitesmoke;
 }
+ 
