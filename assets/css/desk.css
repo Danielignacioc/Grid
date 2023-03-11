@@ -24,9 +24,11 @@ aside {
     grid-area: asideBar;
     background-color: gray;
     padding-left: 1rem;
-    width: 100%;
-    border-right: solid black 5px;
+    border-right: solid black ;
+}
 
+aside b { 
+    margin-bottom: 1rem;
 }
 
 aside ul {
@@ -34,12 +36,9 @@ aside ul {
     flex-direction: column;
     align-items: left;
     margin: 1rem;
-}
 
-aside b { 
-    margin-bottom: 1rem;
-}
 
+}
 
 aside ul li
 {
@@ -48,18 +47,21 @@ aside ul li
 
 aside ul li a {
     text-decoration: none;
-    color:aliceblue
+    color: aliceblue;
 }
 
 aside ul li a:hover {
     color:brown;
 }
 
+
 section {
-    display: grid; /* ?? */
+    display: grid;
+    /* ?? */
     grid-area: grillaProd;
     background-color: gray;
-    grid-template-columns: 1fr; /* ?? */
+    grid-template-columns: 1fr 1fr;
+    /* ?? */
 
 }
 
@@ -67,20 +69,19 @@ section {
 .item {
     display: flex;
     flex-direction: column;
-    margin: 5% 15%;
     align-items: center;
-
+    margin: 0;
 }
 
 
 .item img {
-    width: 60%;
+    width: 30%;
     margin: 5%;
-    border: solid black 0.2rem;
+    border: solid black 0.1rem;
 }
 
 .item button {
-    width: 60%;
+    width: 40%;
     margin: 5%;
 }
 
