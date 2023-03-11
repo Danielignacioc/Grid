@@ -20,14 +20,13 @@ nav p {
 }
 
 aside {
-
     grid-area: asideBar;
     background-color: gray;
     padding-left: 1rem;
-    border-right: solid black ;
+    border-right: solid black;
 }
 
-aside b { 
+aside b {
     margin-bottom: 1rem;
 }
 
@@ -40,8 +39,7 @@ aside ul {
 
 }
 
-aside ul li
-{
+aside ul li {
     margin: 0.3rem;
 }
 
@@ -51,18 +49,15 @@ aside ul li a {
 }
 
 aside ul li a:hover {
-    color:brown;
+    color: brown;
 }
 
 
 section {
     display: grid;
-    /* ?? */
     grid-area: grillaProd;
     background-color: gray;
     grid-template-columns: 1fr 1fr;
-    /* ?? */
-
 }
 
 

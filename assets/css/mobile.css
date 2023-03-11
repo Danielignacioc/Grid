@@ -36,30 +36,29 @@ aside ul {
     margin: 1rem;
 }
 
-aside b { 
+aside b {
     margin-bottom: 1rem;
 }
 
 
-aside ul li
-{
+aside ul li {
     margin: 0.3rem;
 }
 
 aside ul li a {
     text-decoration: none;
-    color:aliceblue
+    color: aliceblue
 }
 
 aside ul li a:hover {
-    color:brown;
+    color: brown;
 }
 
 section {
-    display: grid; /* ?? */
+    display: grid;
     grid-area: grillaProd;
     background-color: gray;
-    grid-template-columns: 1fr; /* ?? */
+    grid-template-columns: 1fr;
 
 }
 
