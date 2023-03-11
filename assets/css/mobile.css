@@ -71,12 +71,21 @@ section {
 
 }
 
+.item:hover {
+    transform: scale(1.2);
+    transition: transform .2s;
+    opacity: 85%;
+}
+
 
 .item img {
     width: 60%;
     margin: 5%;
     border: solid black 0.2rem;
+
 }
+
+
 
 .item button {
     width: 60%;
