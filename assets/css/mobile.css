@@ -5,8 +5,6 @@
 
 
 nav {
-    /*     display: grid;
- */
     grid-area: navBar;
     background-color: darkblue;
 
