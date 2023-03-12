@@ -1,0 +1,103 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "navBar navBar navBar"
+            "asideBar  grillaProd grillaProd"
+            "asideBar  grillaProd grillaProd"
+            "footer footer footer";
+        grid-template-columns: 0.1fr 1fr 1fr;
+        grid-template-rows: 30px repeat(2, calc(((100% - 70px)/2))) 30px;
+    }
+
+
+
+    nav {
+        grid-area: navBar;
+        background-color: darkblue;
+
+    }
+
+
+    nav p {
+        color: whitesmoke;
+        font: bold arial 15px;
+        text-align: center;
+    }
+
+    aside {
+        grid-area: asideBar;
+        background-color: gray;
+        padding-left: 1rem;
+        border-right: solid black;
+    }
+
+    aside b {
+        margin-bottom: 1rem;
+    }
+
+    aside ul {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+
+
+    }
+
+    aside ul li {
+        margin: 0.3rem;
+    }
+
+    aside ul li a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    aside ul li a:hover {
+        color: brown;
+    }
+
+
+    section {
+        display: grid;
+        grid-area: grillaProd;
+        background-color: gray;
+
+    }
+
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .item:hover {
+        transform: scale(1.2);
+        transition: transform .2s;
+        opacity: 85%;
+    }
+
+    .item img {
+        width: 30%;
+        margin: 5%;
+        border: solid black 0.1rem;
+    }
+
+    .item button {
+        width: 40%;
+        margin: 5%;
+    }
+
+    footer {
+        grid-area: footer;
+        direction: row;
+        text-align: center;
+        background-color: aqua;
+    }

@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 
 nav {
     grid-area: navBar;
@@ -91,11 +91,10 @@ section {
 }
 
 footer {
-    /*     display: grid;
- */
     grid-area: footer;
     direction: row;
     text-align: center;
+    margin-bottom: 0;
 }
 
 
@@ -107,3 +106,4 @@ footer {
         "asideBar grillaProd grillaProd"
         "footer footer footer";
 }
+

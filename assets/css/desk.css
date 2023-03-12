@@ -1,12 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
 nav {
-    /*     display: grid;
- */
     grid-area: navBar;
     background-color: darkblue;
 
@@ -21,6 +20,7 @@ nav p {
 
 aside {
     grid-area: asideBar;
+    grid-template-columns: calc(100vh);
     background-color: gray;
     padding-left: 1rem;
     border-right: solid black;
@@ -33,7 +33,6 @@ aside b {
 aside ul {
     display: flex;
     flex-direction: column;
-    align-items: left;
     margin: 1rem;
 
 
@@ -86,11 +85,10 @@ section {
 }
 
 footer {
-    /*     display: grid;
- */
     grid-area: footer;
     direction: row;
     text-align: center;
+    background-color: aqua;
 }
 
 
@@ -101,4 +99,5 @@ footer {
         "asideBar grillaProd grillaProd"
         "asideBar grillaProd grillaProd"
         "footer footer footer";
+    grid-template-rows: 30px repeat(2, calc((100vh - 60px)/2)) 30px;
 }
